@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioSeisRequest;
 use Illuminate\Http\Request;
 
 class ExercicioSeisController extends Controller
 {
-    public function verificar(Request $request){
+    public function verificar(ExercicioSeisRequest $request){
 
         $n1 = $request->idade;
 

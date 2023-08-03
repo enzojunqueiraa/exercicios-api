@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioTresRequest;
 use Illuminate\Http\Request;
 
 class ExercicioTresController extends Controller
 {
-    public function numerosReais(Request $request){
+    public function numerosReais(ExercicioTresRequest $request){
 
         $primeiraEntrada = $request->primeiroNumero;
         $segundaEntrada =  $request->segundoNumero;
